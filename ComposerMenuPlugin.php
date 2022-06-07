@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Arokettu\ComposerMenu;
 
-use Arokettu\ConsoleMenu\ConsoleMenuCommand;
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\Capability\CommandProvider;
@@ -23,7 +22,7 @@ class ComposerMenuPlugin implements PluginInterface, Capable, CommandProvider
     public function getCommands(): array
     {
         return [
-            new ConsoleMenuCommand(),
+            new ComposerMenuCommand(),
         ];
     }
 
