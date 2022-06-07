@@ -22,7 +22,7 @@ class ComposerMenuPlugin implements PluginInterface, Capable, CommandProvider
     public function getCommands(): array
     {
         return [
-            new ComposerMenuCommand(),
+            new ComposerMenuCommand('menu'),
         ];
     }
 

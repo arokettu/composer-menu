@@ -16,12 +16,11 @@ class ComposerMenuCommand extends BaseCommand
     public function __construct(string $name = null)
     {
         parent::__construct($name);
-        $this->menu = new ConsoleMenuCommand();
+        $this->menu = new ConsoleMenuCommand($name);
     }
 
     protected function initialize(InputInterface $input, OutputInterface $output)
     {
-        $this->setName('menu');
         $this->setDescription('Commands menu');
     }
 
