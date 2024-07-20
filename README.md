@@ -8,12 +8,14 @@ Adds [console menu] to [composer]
 ## Installation
 
 ```bash
+composer config repositories.composer-menu github https://github.com/arokettu/composer-menu
 composer require arokettu/composer-menu
 ```
 
-or better install it globally
+or install it globally
 
 ```bash
+composer global config repositories.composer-menu github https://github.com/arokettu/composer-menu
 composer global require arokettu/composer-menu
 ```
 
